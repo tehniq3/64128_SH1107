@@ -117,7 +117,7 @@ void loop() {
 unsigned long t = millis();
 
 ora = timeClient.getHours();
-if (ora > 12)
+if (ora >= 12)
 {
   pm = ora / 12;
   ora = ora % 12;
