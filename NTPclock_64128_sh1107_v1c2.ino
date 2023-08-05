@@ -161,7 +161,7 @@ void ceas()
     u8g2.drawStr(10, 63, "arduinotehniq.com"); // write something to the internal memory
     u8g2.setFont(u8g2_font_7Segments_26x42_mn);
   //  u8g2.drawStr(0,54,h_str);
-    if (ora%10 == 1) 
+    if (ora > 9) 
     {
     u8g2.setCursor(0,54);
     }
