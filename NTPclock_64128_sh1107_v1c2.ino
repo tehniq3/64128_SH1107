@@ -118,11 +118,11 @@ unsigned long t = millis();
 
 ora = timeClient.getHours();
 if (ora >= 12)
-{
-  pm = ora / 12;
-  ora = ora % 12;
-  if (ora == 0) ora = 12;
-}
+  pm = 1;
+else
+  pm = 0;
+ ora = ora % 12;
+ if (ora == 0) ora = 12;
 minut = timeClient.getMinutes();
 secunda = timeClient.getSeconds();
 
